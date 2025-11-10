@@ -1,0 +1,13 @@
+.py-base {
+  padding-inline: 1.25rem;
+}
+
+.title {
+  font: var(--title);
+  color: var(--content-primary)
+}
+
+.paragraph-medium {
+  font: var(--paragraph-medium);
+  color: var(--content-tertiary);
+}
