@@ -11,3 +11,7 @@
   font: var(--paragraph-medium);
   color: var(--content-tertiary);
 }
+
+.flex {
+  display: flex;
+}

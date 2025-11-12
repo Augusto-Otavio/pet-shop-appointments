@@ -1,0 +1,86 @@
+.morning {
+  margin-top: 2rem;
+
+  width: 100%;
+  height: auto;
+  background-color: var(--background-tertiary);
+  border-radius: 0.625rem;
+
+  & > div {
+    display: flex;
+    padding: 0.75rem 1.25rem;
+
+    & .date-morning {
+      font: var(--label-large);
+      margin-left: auto;
+      color: var(--content-secondary);
+    }
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+
+    & img {
+      margin-right: 0.75rem;
+    }
+    
+    h3 {
+      font: var(--label-large);
+      color: var(--content-primary);
+    }
+  }
+
+  .diviser {
+    display: flex;
+    border: 1px solid #2e2c30;
+    width: 100%;
+  }
+
+  .owner-information {
+    display: flex;
+    flex-direction: column;
+    
+    padding: 1.25rem;
+    .appointment-information {
+      display: flex;
+      align-items: center;
+
+      & .appointment-date {
+        font: var(--label-medium);
+        margin-right: 0.75rem;
+        color: var(--content-primary);
+      }
+
+      & .pet-name {
+        font: var(--label-medium);
+        color: var(--content-primary);
+        margin-right: 0.25rem;
+      }
+
+      & .owner-name {
+        font: var(--paragraph-medium);
+        color: var(--content-secondary);
+      }
+
+      & .separate {
+        margin-right: 0.25rem;
+        color: var(--content-secondary);
+      }
+    }
+
+    .service-description {
+      & .service-name {
+        font: var(--paragraph-medium);
+        color: var(--content-secondary);
+      }
+    }
+
+    .remove-appointment {
+      font: var(--paragraph-small);
+      margin-top: 0.5rem;
+      margin-left: auto;
+      color: var(--content-tertiary);
+    }
+  }
+}
