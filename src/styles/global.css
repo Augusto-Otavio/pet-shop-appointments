@@ -8,7 +8,7 @@
   margin: 0;
   padding: 0;
 
-  -webkit-font-smooting: antialiased;
+  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
@@ -53,6 +53,7 @@ body {
   background-color: #14151d;
 }
 
-.container {
-  margin-top: 0.5625rem;
+ul li {
+  list-style: none;
 }
+

@@ -1,0 +1,146 @@
+#appointment-periods {
+  margin-bottom: 0.75rem;
+
+.period {
+  margin-top: 0.75rem;
+
+  width: 100%;
+  height: auto;
+  background-color: var(--background-tertiary);
+  border-radius: 0.625rem;
+    
+    & .date-period {
+      font: var(--label-large);
+      margin-left: auto;
+      color: var(--content-secondary);
+    }
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1.25rem;
+
+    & img {
+      margin-right: 0.75rem;
+    }
+    
+    h3 {
+      font: var(--label-large);
+      color: var(--content-primary);
+    }
+  }
+
+  .diviser {
+    display: flex;
+    border: 1px solid #2e2c30;
+    width: 100%;
+  }
+
+  .owner-information {
+    display: flex;
+    flex-direction: column;
+    padding: 1.25rem;
+
+    .appointment-information {
+      padding: 0.75rem 0.75rem 0;
+
+      display: flex;
+      align-items: center;
+
+      & .appointment-date {
+        font: var(--label-medium);
+        padding-right: 0.75rem;
+        color: var(--content-primary);
+      }
+    
+
+      & .pet-name {
+        font: var(--label-medium);
+        color: var(--content-primary);
+        padding-right: 0.25rem;
+      }
+
+      & .owner-name {
+        font: var(--paragraph-medium);
+        color: var(--content-secondary);
+      }
+
+      & .separate {
+        padding-right: 0.25rem;
+        color: var(--content-secondary);
+      }
+    }
+
+    & .period-diviser {
+      border: 0.5px solid #2e2c30;
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+
+    & .service-name {
+        font: var(--paragraph-medium);
+        color: var(--content-secondary);
+        padding-left: 0.75rem;
+    }
+
+    & .remove-appointment {
+      display: flex;
+      justify-content: end;
+      font: var(--paragraph-small);
+      padding: 0.5rem 0.75rem 0.75rem 0;
+      color: var(--content-tertiary);
+
+      &:hover {
+        color: var(--content-primary);
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@media (width >= 80em) {
+  #appointment-periods {
+    max-width: 44.4375rem;
+    margin-inline: auto;
+
+    .owner-information {
+      .owner-content {
+        display: flex;
+        align-items: center;
+        padding: 1rem 1.21875rem 1rem 0.75rem;
+        gap: 1rem;
+
+        & .appointment-information {
+          padding: 0;
+          width: 12.1875rem;
+          
+          & .appointment-date {
+            font: var(--label-small);
+            padding-right: 1rem;
+          }
+
+          & .owner-name {
+            font: var(--paragraph-small);
+          }
+
+          & .pet-name {
+            font: var(--paragraph-small);
+          }
+        }
+
+        & .service-name {
+          font: var(--paragraph-small);
+          padding-left: 0;
+          width: 13.71875rem;
+        }
+
+        & .remove-appointment {
+          padding: 0;
+          margin-left: auto;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}

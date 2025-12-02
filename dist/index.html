@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pet shop appointments</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-</head>
+<link rel="icon" href="pet.svg"><script defer src="main.js"></script></head>
 <body>
     <nav id="logo">
       <img src="./src/assets/logo.svg" alt="Logo mundo pet">
@@ -19,6 +19,7 @@
         <h1 class="title">Sua agenda</h1>
         <p class="paragraph-medium">Aqui você pode ver todos os clientes e serviços agendados para hoje.</p>
       </div>
+
         <div class="input-date">
           <img src="./src/assets/calendar.svg" alt="Ícone de calendário">
           <input type="date" name="date" id="date" required>
@@ -125,31 +126,24 @@
       </section>
     </section>
 
-    <div class="blur-background none"></div>
-    <section id="modal-appointment" class="none">
-      <div class="icon-cancel">
-         <img src="./src/assets/cancel.svg" alt="Ícone de cancelar">
-      </div>
+    <section id="modal-appointment">
       <header>
         <h1>Agende um atendimento</h1>
         <p>Preencha os dados do cliente para realizar o agendamento:</p>
       </header>
       <div class="form">
-        <label for="name-of-tutor">Nome do tutor</label>
         <div class="input-wrapper">
-          <img src="./src/assets/people.svg" alt="Ícone de pessoa">
+          <label for="name-of-tutor">Nome do tutor</label>
+          <div class="people-image"></div>
           <input 
           type="text" 
           name="name-of-tutor" 
           id="name-of-tutor"
           placeholder="Helena Souza"
-          autofocus
           >
         </div>
-
-        <label for="name-of-pet">Nome do pet</label>
         <div class="input-wrapper">
-          <img src="./src/assets/pet-paw.svg" alt="Ícone de pata do pet">
+          <label for="name-of-pet">Nome do pet</label>
           <input 
           type="text" 
           name="name-of-pet" 
@@ -157,60 +151,40 @@
           placeholder="Cheddar"
           >
         </div>
-
-        <label for="phone">Telefone</label>
         <div class="input-wrapper">
-          <img src="./src/assets/phone.svg" alt="Ícone de telefone">
-          <input
+          <label for="phone">Telefone</label>
+          <input 
           type="text" 
           name="phone" 
           id="phone"
           placeholder="(00) 0 0000-0000"
           >
         </div>
-
-        <label for="service-description">Descrição do serviço</label>
         <div class="textarea-wrapper">
+          <label for="service-description">Descrição do serviço</label>
           <textarea name="service-description" id="service-description">Descrição do serviço</textarea>
         </div>
-
-        <div class="date-container">
-          <div class="date-section">
-            <label for="date">Data</label>
-            <div class="date-wrapper">
-              <img src="./src/assets/calendar.svg" alt="Ícone de calendário">
-              <input  
-              type="date" 
-              name="date" 
-              id="date"
-              lang="pt-BR"
-              >
-              <img src="./src/assets/arrow.svg" alt="ícone de seta">
-            </div>
-          </div>
-          <div class="hour-section">
+        <div class="date-wrapper">
+          <label for="date">Data</label>
+          <input 
+          type="date" 
+          name="date" 
+          id="date"
+          lang="pt-BR"
+          >
+          
           <label for="hour">Hora</label>
-            <div class="hour-wrapper">
-              <img src="./src/assets/hour.svg" alt="Ícone de hora">
-              <input 
-              type="time" 
-              name="hour" 
-              id="hour"
-              >
-              <img src="./src/assets/arrow.svg" alt="ícone de seta">
-            </div>
-          </div>
+          <input 
+          type="time" 
+          name="hour" 
+          id="hour">
         </div>
-      </div>
-      
-      <div class="modal-button">
-        <button type="submit">agendar</button>
       </div>
     </section>
   </main>
 
   <footer id="new-schedule">
-    <button id="button-appoinment" type="submit">
+    <button type="submit">
       Novo Agendamento
     </button>
   </footer>

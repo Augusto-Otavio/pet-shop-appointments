@@ -1,0 +1,37 @@
+.px-base {
+  padding-inline: 1.25rem;
+}
+
+.title {
+  font: var(--title);
+  color: var(--content-primary)
+}
+
+.paragraph-medium {
+  font: var(--paragraph-medium);
+  color: var(--content-tertiary);
+}
+
+.flex {
+  display: flex;
+}
+
+.none {
+  display: none;
+}
+
+.container {
+  position: relative;
+  margin-top: 0.5625rem;
+}
+
+@media (width >= 80em) {
+  .px-base {
+  padding-inline: 5rem;
+  }
+
+  .container {
+    margin-top: 0px;
+    margin: 0 auto;
+  }
+}

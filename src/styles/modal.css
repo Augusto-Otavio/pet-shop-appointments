@@ -1,0 +1,149 @@
+.blur-background {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.40);
+  backdrop-filter: blur(6px);
+  z-index: 0;
+  }
+
+#modal-appointment {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  padding-inline: 1.25rem;
+  background-color: var(--background-tertiary);
+  border-radius: 0.75rem;
+  z-index: 1;
+  
+    
+  .icon-cancel {
+    display: flex;
+    padding-top: 1.25rem;
+    padding-bottom: 0.47rem;
+
+    & img {
+      margin-left: auto;
+    }
+  }
+
+  & header {
+    & h1 {
+      font: var(--title);
+      color: var(--content-primary);
+      margin-bottom: 0.25rem;
+    }
+
+    & p {
+      font: var(--paragraph-medium);
+      color: var(--content-secondary);
+      margin-bottom: 1.75rem;
+    }
+  }
+
+  .input-wrapper, .textarea-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 0.5rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    border: 2px solid transparent;
+    outline: 1px solid var(--border-primary);
+
+    padding: 0.75rem;
+    background-color: var(--background-tertiary);
+    
+    &:hover {
+      border-color: var(--border-secondary);
+    }
+
+    &:focus-within {
+      outline: 2px solid var(--content-brand);
+      border: 2px solid transparent;
+    }
+  }
+  
+
+  .date-container {
+    & .date-wrapper, .hour-wrapper {
+        position: relative;
+        all: unset;
+        display: flex;
+        border-radius: 0.5rem;
+        border: 2px solid var(--border-primary);
+        gap: 0.5rem;
+        font: 500 1rem/1.5rem var(--ff-inter);
+
+        padding: 0.75rem 0.75rem;
+        background-color: var(--background-tertiary);
+        
+        & img:nth-of-type(2) {
+          margin-left: auto;
+          z-index: 0;
+        }
+
+      & ::-webkit-calendar-picker-indicator {
+          position: absolute;
+          opacity: 0;
+          width: 100%;
+          z-index: 1;
+      }
+    }
+  }
+
+  .modal-button {
+    display: flex;
+    justify-content: end;
+    padding-block: 1.75rem 2.5rem;
+
+    & button {
+      all: unset;
+    
+      font: var(--label-large);
+      background-color: var(--content-brand);
+      text-align: center;
+      border-radius: 0.5rem;
+      cursor: pointer;
+
+      text-transform: uppercase;
+
+      padding: 0.75rem 1.5rem;
+
+      &:hover {
+        background-color: var(--background-highlights);
+      }
+    }
+  }
+}
+
+input, textarea {
+  all: unset;
+  font: 500 1rem/1.5rem var(--ff-inter);
+  color: var(--content-secondary);
+  width: 100%;
+}
+
+label {
+  display: block;
+  font: var(--label-medium);
+  color: var(--content-primary);
+  margin-block: 1rem 0.25rem;
+}
+
+@media (width >= 80em) {
+  #modal-appointment {
+    width: 29.8125rem;
+    padding-inline: 2.5rem;
+
+    .date-container {
+      display: flex;
+      gap: 1rem;
+
+      .date-section, .hour-section {
+        width: 100%;
+      }
+    }
+  }
+}
