@@ -19,7 +19,6 @@
         <h1 class="title">Sua agenda</h1>
         <p class="paragraph-medium">Aqui você pode ver todos os clientes e serviços agendados para hoje.</p>
       </div>
-
         <div class="input-date">
           <img src="./src/assets/calendar.svg" alt="Ícone de calendário">
           <input type="date" name="date" id="date" required>
@@ -126,15 +125,19 @@
       </section>
     </section>
 
-    <section id="modal-appointment">
+    <div class="blur-background none"></div>
+    <form id="modal-appointment" class="none">
+      <div class="icon-cancel">
+         <img src="./src/assets/cancel.svg" id="cancel" alt="Ícone de cancelar">
+      </div>
       <header>
         <h1>Agende um atendimento</h1>
         <p>Preencha os dados do cliente para realizar o agendamento:</p>
       </header>
       <div class="form">
+        <label for="name-of-tutor">Nome do tutor</label>
         <div class="input-wrapper">
-          <label for="name-of-tutor">Nome do tutor</label>
-          <div class="people-image"></div>
+          <img src="./src/assets/people.svg" alt="Ícone de pessoa">
           <input 
           type="text" 
           name="name-of-tutor" 
@@ -142,8 +145,10 @@
           placeholder="Helena Souza"
           >
         </div>
+
+        <label for="name-of-pet">Nome do pet</label>
         <div class="input-wrapper">
-          <label for="name-of-pet">Nome do pet</label>
+          <img src="./src/assets/pet-paw.svg" alt="Ícone de pata do pet">
           <input 
           type="text" 
           name="name-of-pet" 
@@ -151,40 +156,60 @@
           placeholder="Cheddar"
           >
         </div>
+
+        <label for="phone">Telefone</label>
         <div class="input-wrapper">
-          <label for="phone">Telefone</label>
-          <input 
+          <img src="./src/assets/phone.svg" alt="Ícone de telefone">
+          <input
           type="text" 
           name="phone" 
           id="phone"
           placeholder="(00) 0 0000-0000"
           >
         </div>
+
+        <label for="service-description">Descrição do serviço</label>
         <div class="textarea-wrapper">
-          <label for="service-description">Descrição do serviço</label>
-          <textarea name="service-description" id="service-description">Descrição do serviço</textarea>
+          <textarea name="service-description" id="service-description" placeholder="Descrição do serviço"></textarea>
         </div>
-        <div class="date-wrapper">
-          <label for="date">Data</label>
-          <input 
-          type="date" 
-          name="date" 
-          id="date"
-          lang="pt-BR"
-          >
-          
+
+        <div class="date-container">
+          <div class="date-section">
+            <label for="date">Data</label>
+            <div class="date-wrapper">
+              <img src="./src/assets/calendar.svg" alt="Ícone de calendário">
+              <input  
+              type="date" 
+              name="date" 
+              id="date"
+              lang="pt-BR"
+              >
+              <img src="./src/assets/arrow.svg" alt="ícone de seta">
+            </div>
+          </div>
+          <div class="hour-section">
           <label for="hour">Hora</label>
-          <input 
-          type="time" 
-          name="hour" 
-          id="hour">
+            <div class="hour-wrapper">
+              <img src="./src/assets/hour.svg" alt="Ícone de hora">
+              <input 
+              type="time" 
+              name="hour" 
+              id="hour"
+              >
+              <img src="./src/assets/arrow.svg" alt="ícone de seta">
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+      
+      <div class="modal-button">
+        <button type="submit">agendar</button>
+      </div>
+    </form>
   </main>
 
   <footer id="new-schedule">
-    <button type="submit">
+    <button id="button-appoinment" type="submit">
       Novo Agendamento
     </button>
   </footer>

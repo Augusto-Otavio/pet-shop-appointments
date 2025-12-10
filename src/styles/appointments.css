@@ -83,6 +83,7 @@
         color: var(--content-secondary);
         padding-left: 0.75rem;
     }
+    
 
     & .remove-appointment {
       display: flex;
@@ -90,6 +91,7 @@
       font: var(--paragraph-small);
       padding: 0.5rem 0.75rem 0.75rem 0;
       color: var(--content-tertiary);
+      cursor: pointer;
 
       &:hover {
         color: var(--content-primary);

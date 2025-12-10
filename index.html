@@ -126,7 +126,7 @@
     </section>
 
     <div class="blur-background none"></div>
-    <section id="modal-appointment" class="none">
+    <form id="modal-appointment" class="none">
       <div class="icon-cancel">
          <img src="./src/assets/cancel.svg" id="cancel" alt="Ícone de cancelar">
       </div>
@@ -170,7 +170,7 @@
 
         <label for="service-description">Descrição do serviço</label>
         <div class="textarea-wrapper">
-          <textarea name="service-description" id="service-description">Descrição do serviço</textarea>
+          <textarea name="service-description" id="service-description" placeholder="Descrição do serviço"></textarea>
         </div>
 
         <div class="date-container">
@@ -180,8 +180,8 @@
               <img src="./src/assets/calendar.svg" alt="Ícone de calendário">
               <input  
               type="date" 
-              name="date" 
-              id="date"
+              name="modal-date" 
+              id="modal-date"
               lang="pt-BR"
               >
               <img src="./src/assets/arrow.svg" alt="ícone de seta">
@@ -205,7 +205,7 @@
       <div class="modal-button">
         <button type="submit">agendar</button>
       </div>
-    </section>
+    </form>
   </main>
 
   <footer id="new-schedule">

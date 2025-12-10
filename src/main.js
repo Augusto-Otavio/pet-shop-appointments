@@ -9,4 +9,11 @@ import "./styles/header.css"
 import "./styles/utility.css"
 import "./styles/modal.css"
 
-import "./modules/form/modal.js"
+import "./modules/form/display-modal.js"
+import "./modules/form/submit.js"
+import "./modules/schedules/load.js"
+import "./modules/form/date-change.js"
+import "./modules/schedules/cancel.js"
+
+
+import "./modules/page-load.js"
