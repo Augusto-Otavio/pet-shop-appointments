@@ -19,15 +19,6 @@
       "selectedHour": "13:02"
     },
     {
-      "id": "1765206173094",
-      "tutorName": "Gustavo",
-      "petName": "bred",
-      "phone": "14998581369",
-      "serviceDescription": "aaaaaa",
-      "selectedDate": "2025-12-08",
-      "selectedHour": "13:02"
-    },
-    {
       "id": "1765379895342",
       "tutorName": "Gustavo",
       "petName": "bred",
@@ -73,22 +64,13 @@
       "selectedHour": "14:17"
     },
     {
-      "id": "1765206173094",
-      "tutorName": "Gustavo",
-      "petName": "bred",
-      "phone": "14998581369",
-      "serviceDescription": "aaaaaa",
-      "selectedDate": "2025-12-08",
-      "selectedHour": "13:02"
-    },
-    {
-      "id": "1765379895342",
-      "tutorName": "Gustavo",
-      "petName": "bred",
-      "phone": "14998581369",
-      "serviceDescription": "aaaaa",
-      "selectedDate": "2025-12-10",
-      "selectedHour": "14:17"
+      "id": "1765487039638",
+      "tutorName": "Lucas Felipe",
+      "petName": "Neguinho",
+      "phone": "14 991596339",
+      "serviceDescription": "aaaa",
+      "selectedDate": "2025-12-12",
+      "selectedHour": "09:00"
     }
   ]
 }

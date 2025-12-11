@@ -4,10 +4,10 @@
   background: rgba(0, 0, 0, 0.40);
   backdrop-filter: blur(6px);
   z-index: 0;
-  }
+}
 
 #modal-appointment {
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -97,7 +97,7 @@
   .modal-button {
     display: flex;
     justify-content: end;
-    padding-block: 1.75rem 2.5rem;
+    padding-top: 1.75rem;
 
     & button {
       all: unset;
@@ -135,14 +135,19 @@ label {
 
 @media (width >= 80em) {
   #modal-appointment {
+    position: fixed;
     width: 29.8125rem;
-    padding-inline: 2.5rem;
+    padding: 2.5rem;
 
-    .date-container {
+    & .icon-cancel {
+      display: none;
+    }
+
+    & .date-container {
       display: flex;
       gap: 1rem;
 
-      .date-section, .hour-section {
+      & .date-section, .hour-section {
         width: 100%;
       }
     }

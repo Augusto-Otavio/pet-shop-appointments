@@ -11,7 +11,7 @@ btn.onclick = (e) => {
   input.focus()
 }
 
-cancel.onclick = (e) => {
+blur.onclick = (e) => {
   e.preventDefault()
   modal.classList.add("none")
   blur.classList.add("none")
