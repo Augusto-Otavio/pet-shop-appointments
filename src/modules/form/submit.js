@@ -2,6 +2,7 @@ import dayjs from "dayjs"
 
 import { scheduleNew } from "../../services/schedule-new.js"
 import { scheduleDay } from "../schedules/load.js"
+import { hideModalAndBlur } from "../form/display-modal.js"
 
 const form = document.querySelector("form")
 const tutorName = document.getElementById("name-of-tutor")
@@ -87,8 +88,7 @@ form.onsubmit = async (event) => {
 
     await scheduleDay()
 
-    modal.classList.add("none")
-    blur.classList.add("none")
+    hideModalAndBlur()
 
   } catch (error) {
     alert("Não foi possível realizar o agendamento")

@@ -4,15 +4,23 @@ const blur = document.querySelector(".blur-background")
 const input = document.querySelector("input[type=text]")
 const cancel = document.getElementById("cancel")
 
-btn.onclick = (e) => {
-  e.preventDefault()
+export function hideModalAndBlur() {
+  modal.classList.add("none")
+  blur.classList.add("none")
+}
+
+export function showModalAndBlur() {
   modal.classList.remove("none")
   blur.classList.remove("none")
+}
+
+btn.onclick = (e) => {
+  e.preventDefault()
+  showModalAndBlur()
   input.focus()
 }
 
 blur.onclick = (e) => {
   e.preventDefault()
-  modal.classList.add("none")
-  blur.classList.add("none")
+  hideModalAndBlur()
 }
